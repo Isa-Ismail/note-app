@@ -1,9 +1,9 @@
-import React from 'react'
-
-interface Props {}
-
-const page = () => {
-  return <div>dashboard</div>
+import { UserButton } from "@clerk/nextjs";
+ 
+export default function Home() {
+  return (
+    <>
+      <UserButton afterSignOutUrl="/"/>
+    </>
+  )
 }
-
-export default page
