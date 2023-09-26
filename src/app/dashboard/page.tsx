@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
+import CreateNoteDialog from "@/components/CreateNoteDialog";
  
 export default function Home() {
   return (
@@ -23,6 +24,9 @@ export default function Home() {
       <Separator />
       <div className="mt-8 text-center">
         <h2 className="text-xl text-gray-500">You've no notes right now</h2>
+      </div>
+      <div className="m-10 grid sm:grid-cols-3 md:grid-cols-5 grid-cols-1 gap-3">
+        <CreateNoteDialog />
       </div>
     </div >
   )
