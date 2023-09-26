@@ -13,9 +13,11 @@ const TypewriterTitle = (props: Props) => {
           }}
           onInit={(typewriter) => { 
             typewriter
-                .typeString("🤖 Supercharged Productivity!! 🤖")
-                .pauseFor(2500)
-                .start()
+              .typeString("Supercharged Productivity!! 🤖")
+              .pauseFor(500)
+              .deleteAll()
+              .typeString("Take note of your thoughts 📝")
+              .start()
           }}
       />
   )
