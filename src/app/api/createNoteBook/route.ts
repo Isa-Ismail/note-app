@@ -8,10 +8,10 @@ export async function POST(req: Request) {
   // if (!userId) {
   //   return new NextResponse('Unauthorized', { status: 401 })
   // }
-  
-  const { body } = await req.json()
-  const { name } = body
-  const image_description = await generateImagePrompt(name)
-  console.log(image_description)
-  return new NextResponse(JSON.stringify({ image_description }))
+
+  // const { body } = await req.json()
+  // const { name } = body
+  // const image_description = await generateImagePrompt(name)
+  // console.log(image_description)
+  return new NextResponse(JSON.stringify({ image_description: 'hi' }))
 }
