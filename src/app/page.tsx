@@ -16,7 +16,7 @@ export default function Home() {
             note taking
           </span>
  
-          { ' ' }assistant
+          { ' ' }assistant of the future
         </h1>
 
         <div className='mt-4'></div>
